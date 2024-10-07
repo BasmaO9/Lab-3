@@ -1,1 +1,53 @@
-omg
+D:\Test 1> git config --global user.name "BasmaO9"
+
+D:\Test 1> git config --global user.email "basmaalghrory@gmail.com"
+
+D:\Test 1>git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=D:/GIT/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=BasmaO9
+user.email=basmaalghrory@gmail.com
+
+D:\Test 1> git init
+Initialized empty Git repository in D:/Test 1/.git/
+
+D:\Test 1> git remote add origin https://github.com/BasmaO9/Lab-3.git
+
+D:\Test 1>
+
+D:\Test 1>git add .
+
+D:\Test 1> git commit -m "first commit"
+[master (root-commit) 2a7c6bd] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+D:\Test 1> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/BasmaO9/Lab-3.git'
+
+D:\Test 1> git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 216.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/BasmaO9/Lab-3.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+D:\Test 1> git push -u origin master
+branch 'master' set up to track 'origin/master'.
+Everything up-to-date
